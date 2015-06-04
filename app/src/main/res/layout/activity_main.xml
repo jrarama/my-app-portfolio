@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/buttons_horizontal_margin"
+        android:paddingRight="@dimen/buttons_horizontal_margin"
+        android:layout_margin="@dimen/activity_margin">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/app_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_spotify"
+                    style="@style/DefaultButton"
+                    android:text="@string/button_spotify" />
+
+                <Button
+                    android:id="@+id/button_score"
+                    style="@style/DefaultButton"
+                    android:text="@string/button_score_app" />
+
+                <Button
+                    android:id="@+id/button_library"
+                    style="@style/DefaultButton"
+                    android:text="@string/button_library_app" />
+
+                <Button
+                    android:id="@+id/button_bigger"
+                    style="@style/DefaultButton"
+                    android:text="@string/button_build_bigger" />
+
+                <Button
+                    android:id="@+id/button_reader"
+                    style="@style/DefaultButton"
+                    android:text="@string/button_bacon_reader" />
+
+                <Button
+                    android:id="@+id/button_capstone"
+                    style="@style/PrimaryButton"
+                    android:text="@string/button_capstone" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
